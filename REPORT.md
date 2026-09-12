@@ -1,5 +1,5 @@
 ﻿# Technical Evaluation Report: AI Customer Support Agent for @AppleSupport
-**Candidate**: SDE Intern Applicant  
+ 
 **Target Brand**: `@AppleSupport` (Customer Support on Twitter Corpus)  
 **Deliverable**: Comprehensive Engineering & Evaluation Report (Hiver Take-Home Assignment)
 
