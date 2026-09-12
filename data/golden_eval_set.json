@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "GOLD-001",
+    "customer_tweet": "My iPhone 7 battery is draining from 100% to 20% in less than 2 hours without even using it. Is this normal?",
+    "true_intent": "hardware_battery",
+    "true_escalate": false,
+    "true_escalation_reason": "Standard battery drain troubleshooting: check battery health and background app usage before hardware service.",
+    "gold_reference_reply": "We want to help with your battery life! Go to Settings > Battery > Battery Health to check maximum capacity, and see which apps are using the most power. DM us if you would like to troubleshoot further.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-002",
+    "customer_tweet": "My phone battery is visibly bulging and pushing the screen off the frame! What should I do??",
+    "true_intent": "hardware_battery",
+    "true_escalate": true,
+    "true_escalation_reason": "Swollen battery is a severe hardware safety hazard. Immediate human escalation and store service required.",
+    "gold_reference_reply": "Please stop using and charging your device immediately for your safety. We are escalating this to our safety team and will help you schedule an immediate Genius Bar appointment.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-003",
+    "customer_tweet": "Whenever I plug my charger in, it says Accessory may not be supported and refuses to charge.",
+    "true_intent": "hardware_battery",
+    "true_escalate": false,
+    "true_escalation_reason": "Charging port debris or cable issue. Standard troubleshooting can resolve this without human escalation.",
+    "gold_reference_reply": "We can help get your device charging. Inspect the charging port for lint or debris, and try an Apple-certified cable and wall adapter. DM us your iOS version if it continues.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-004",
+    "customer_tweet": "My iPhone X gets burning hot while doing basic FaceTime calls and shuts off completely.",
+    "true_intent": "hardware_battery",
+    "true_escalate": false,
+    "true_escalation_reason": "Thermal management troubleshooting: check ambient temperature, background updates, and iOS version.",
+    "gold_reference_reply": "Let us look into the temperature on your iPhone. Does this happen on Wi-Fi or cellular? Check Settings > General > Software Update to ensure you have the latest iOS. DM us with details.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-005",
+    "customer_tweet": "I replaced my battery at a third party kiosk and now my phone won't turn on at all. Can you guys fix it?",
+    "true_intent": "hardware_battery",
+    "true_escalate": true,
+    "true_escalation_reason": "Third-party unauthorized hardware tampering and device failure requires Apple Store diagnostic evaluation.",
+    "gold_reference_reply": "We would be glad to look into service options for your device. Because it will not power on after service, we recommend scheduling an appointment at an Apple Store or Authorized Service Provider.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-006",
+    "customer_tweet": "Phone drops from 40% to 1% instantly when I step outside into the cold weather. iPhone 6s.",
+    "true_intent": "hardware_battery",
+    "true_escalate": false,
+    "true_escalation_reason": "Known chemical aging behavior of lithium-ion batteries in cold ambient temperatures; troubleshooting and diagnostic step.",
+    "gold_reference_reply": "Cold temperatures can temporarily affect lithium-ion battery performance. Check Settings > Battery > Battery Health. If maximum capacity is below 80%, a battery replacement is recommended.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-007",
+    "customer_tweet": "My Apple Watch Series 3 battery used to last 2 days, now it dies in 6 hours after updating watchOS.",
+    "true_intent": "hardware_battery",
+    "true_escalate": false,
+    "true_escalation_reason": "Post-update background re-indexing and watchOS background sync issue. Auto-handle via unpair/re-pair troubleshooting.",
+    "gold_reference_reply": "We can help with your Apple Watch battery. After an update, background indexing can take up to 48 hours. If it persists, try unpairing and re-pairing your watch via the Watch app on iPhone.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-008",
+    "customer_tweet": "My iPad charger sparkled when plugged in and the port smells like burnt plastic.",
+    "true_intent": "hardware_battery",
+    "true_escalate": true,
+    "true_escalation_reason": "Electrical burning smell / spark is an acute hardware electrical hazard requiring human escalation.",
+    "gold_reference_reply": "Your safety is our top priority. Please unplug and do not use the iPad or adapter. We are escalating this to our Senior Support team immediately. Please DM us your phone number.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-009",
+    "customer_tweet": "Is fast charging going to degrade my battery health faster on my iPhone 8?",
+    "true_intent": "hardware_battery",
+    "true_escalate": false,
+    "true_escalation_reason": "Educational technical inquiry about fast charging and lithium-ion battery management.",
+    "gold_reference_reply": "Great question! Apple fast charging uses built-in thermal and power regulation to charge quickly up to 80% and trickle charge after to preserve battery health safely.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-010",
+    "customer_tweet": "My phone is stuck on the red battery icon with lightning cable screen and won't boot even after charging all night.",
+    "true_intent": "hardware_battery",
+    "true_escalate": true,
+    "true_escalation_reason": "Failure to hold charge overnight indicates dead logic board power IC or depleted battery cell needing hardware service.",
+    "gold_reference_reply": "We would like to help you get your phone powered up. Since it has not charged overnight, we should run remote diagnostics or set up a hardware service appointment. Please DM us your serial number.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-011",
+    "customer_tweet": "Battery health shows 74% and says service recommended. How much does an official replacement cost?",
+    "true_intent": "hardware_battery",
+    "true_escalate": false,
+    "true_escalation_reason": "Standard battery pricing and service inquiry; direct informational resolution.",
+    "gold_reference_reply": "An out-of-warranty battery replacement is typically $49-$69 depending on model, or free if covered under AppleCare+. You can view exact pricing and book an appointment at support.apple.com/repair.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-012",
+    "customer_tweet": "Since yesterday, Low Power Mode turns on automatically and I cannot toggle it off. It is greyed out.",
+    "true_intent": "hardware_battery",
+    "true_escalate": false,
+    "true_escalation_reason": "Software glitch or profile constraint causing greyed out setting; resolvable via restart or settings reset.",
+    "gold_reference_reply": "We can help with your Low Power Mode settings. Start by performing a force restart of your iPhone. If still greyed out, check Settings > General > VPN & Device Management for any profiles.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-013",
+    "customer_tweet": "Charging only works if I hold the cable at a specific 45 degree angle. Super annoying!",
+    "true_intent": "hardware_battery",
+    "true_escalate": true,
+    "true_escalation_reason": "Loose or physically damaged Lightning/USB-C pins inside port requiring hardware repair or professional cleaning.",
+    "gold_reference_reply": "This often points to debris compacted in the Lightning port or damaged connector pins. We recommend bringing your device to an Apple Store where an advisor can safely clean or inspect the port.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-014",
+    "customer_tweet": "I have been using my phone for 10 minutes and the back glass is already too hot to touch comfortably.",
+    "true_intent": "hardware_battery",
+    "true_escalate": false,
+    "true_escalation_reason": "High CPU utilization or rogue background process; provide initial troubleshooting before escalating.",
+    "gold_reference_reply": "We are here to help. Check Settings > Battery to see if a specific app is running heavily in the background. Also, ensure your iOS is updated. DM us your device model and iOS version.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-015",
+    "customer_tweet": "Why does my battery percentage jump from 60% to 85% randomly when I reboot?",
+    "true_intent": "hardware_battery",
+    "true_escalate": false,
+    "true_escalation_reason": "Battery gauge calibration issue; guide user on recalibration cycles.",
+    "gold_reference_reply": "That can happen if the battery management system needs recalibration. Let the battery drain to 0%, charge uninterrupted to 100%, and perform a force restart.",
+    "difficulty": "hard",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-016",
+    "customer_tweet": "My MacBook Pro battery says Condition: Replace Now. Does this mean it could explode?",
+    "true_intent": "hardware_battery",
+    "true_escalate": true,
+    "true_escalation_reason": "MacBook battery degraded to end-of-life status. Requires hardware booking and customer reassurance.",
+    "gold_reference_reply": "Replace Now means the battery capacity is severely degraded and cannot hold proper charge, though safety mechanisms prevent explosion. We recommend booking a service appointment to replace it.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-017",
+    "customer_tweet": "My MagSafe charger gets warm during charging. Is that safe or should I stop using it?",
+    "true_intent": "hardware_battery",
+    "true_escalate": false,
+    "true_escalation_reason": "Normal inductive heat transfer for wireless MagSafe charging.",
+    "gold_reference_reply": "It is completely normal for MagSafe chargers and devices to get slightly warm during wireless power transfer. The system will automatically limit charging above 80% if it gets too warm.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-018",
+    "customer_tweet": "The battery percentage icon disappeared from my status bar after the update. How do I get it back?",
+    "true_intent": "hardware_battery",
+    "true_escalate": false,
+    "true_escalation_reason": "UI setting toggle in iOS Settings.",
+    "gold_reference_reply": "You can turn that back on easily! Head over to Settings > Battery and toggle on Battery Percentage. On devices with Face ID, you can also swipe down Control Center to see it.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-019",
+    "customer_tweet": "My phone will not charge past 80% no matter how long it stays on the charger at night.",
+    "true_intent": "hardware_battery",
+    "true_escalate": false,
+    "true_escalation_reason": "Optimized Battery Charging feature explanation.",
+    "gold_reference_reply": "This is likely Optimized Battery Charging at work, which pauses charging past 80% to protect battery lifespan until your wake-up time. You can view or toggle this in Settings > Battery > Battery Health.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-020",
+    "customer_tweet": "I already tried resetting network settings, restarting, and buying 3 new cables. The phone still does not charge. I need a replacement now.",
+    "true_intent": "hardware_battery",
+    "true_escalate": true,
+    "true_escalation_reason": "Customer exhausted all standard troubleshooting and expresses frustration. Needs human agent for warranty exchange.",
+    "gold_reference_reply": "We understand your frustration and apologize for the inconvenience. Since multiple cables failed and resets did not help, let us connect you with a senior advisor to arrange warranty service. DM us your serial number.",
+    "difficulty": "hard",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-021",
+    "customer_tweet": "Can I use my 65W MacBook USB-C charger to charge my iPhone without blowing it up?",
+    "true_intent": "hardware_battery",
+    "true_escalate": false,
+    "true_escalation_reason": "Power delivery standard explanation.",
+    "gold_reference_reply": "Yes, absolutely! Apple USB-C power adapters use standard USB Power Delivery negotiation, so your iPhone will safely draw only the maximum power it can handle.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-022",
+    "customer_tweet": "My phone battery drain is insane, 50% lost overnight on standby with all apps closed.",
+    "true_intent": "hardware_battery",
+    "true_escalate": false,
+    "true_escalation_reason": "Standby battery drain troubleshooting: check Background App Refresh and push email.",
+    "gold_reference_reply": "Let us track down what is running overnight. Check Settings > Battery to see the hourly usage graph. Also try toggling off Background App Refresh in Settings > General. DM us if you need more help.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-023",
+    "customer_tweet": "Smart Battery Case is not showing up in the battery widget on iOS 11.2.",
+    "true_intent": "hardware_battery",
+    "true_escalate": false,
+    "true_escalation_reason": "Accessory firmware / connection glitch.",
+    "gold_reference_reply": "We can help with that. Remove your iPhone from the case, clean the Lightning connector on the case with a dry lint-free cloth, restart your phone, and reconnect. DM us if the widget does not update.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-024",
+    "customer_tweet": "My iPhone battery swollen so bad it cracked my screen! I want a full refund and compensation!",
+    "true_intent": "hardware_battery",
+    "true_escalate": true,
+    "true_escalation_reason": "Thermal battery expansion causing structural damage; safety escalation and legal/compensation claim.",
+    "gold_reference_reply": "We take safety concerns very seriously. Please cease using the device immediately. We are escalating this case directly to our Safety and Executive Relations team. Please DM us your full name and contact number.",
+    "difficulty": "hard",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-025",
+    "customer_tweet": "Does using dark mode actually save battery on an iPhone 7 with LCD screen?",
+    "true_intent": "hardware_battery",
+    "true_escalate": false,
+    "true_escalation_reason": "Display technology technical explanation (LCD vs OLED).",
+    "gold_reference_reply": "Dark Mode provides significant battery savings on OLED displays (like iPhone X and newer), but on LCD screens like the iPhone 7, the backlight remains illuminated regardless of color.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-026",
+    "customer_tweet": "My phone is stuck in a bootloop that only happens when plugged into the charger. On battery it boots fine.",
+    "true_intent": "hardware_battery",
+    "true_escalate": true,
+    "true_escalation_reason": "Short circuit or Tristar/Hydra charging IC hardware defect. Requires store diagnostic.",
+    "gold_reference_reply": "That indicates a potential hardware fault with the power delivery circuit. We recommend having your iPhone inspected at an Apple Store or authorized service center. DM us your postal code to find locations.",
+    "difficulty": "hard",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-027",
+    "customer_tweet": "Is it bad to leave my iPhone plugged in overnight all the time?",
+    "true_intent": "hardware_battery",
+    "true_escalate": false,
+    "true_escalation_reason": "Common battery care inquiry.",
+    "gold_reference_reply": "Not at all! iPhones have built-in charge protection circuits that automatically stop incoming current once 100% is reached to avoid overcharging.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-028",
+    "customer_tweet": "My phone shut down at 25% battery in the middle of an emergency call. This is unacceptable.",
+    "true_intent": "hardware_battery",
+    "true_escalate": true,
+    "true_escalation_reason": "Emergency situation with unexpected shutdown; high customer distress and possible battery degradation.",
+    "gold_reference_reply": "We are very sorry to hear about this concerning experience. Sudden shutdowns at 25% indicate sudden voltage drop from battery degradation. Let us connect with you via DM right away to inspect your battery diagnostics.",
+    "difficulty": "hard",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-029",
+    "customer_tweet": "How can I check the battery cycle count on my iPad Pro?",
+    "true_intent": "hardware_battery",
+    "true_escalate": false,
+    "true_escalation_reason": "Feature clarification: iPadOS does not show battery health natively in settings like iPhone.",
+    "gold_reference_reply": "Unlike iPhone, iPadOS does not display battery cycle count in Settings. You can contact Apple Support directly via DM to run a remote diagnostic check on your iPad battery health.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-030",
+    "customer_tweet": "My wireless charging pad was working yesterday and today it will not charge my phone at all.",
+    "true_intent": "hardware_battery",
+    "true_escalate": false,
+    "true_escalation_reason": "Wireless charging troubleshooting (case thickness, alignment, restart).",
+    "gold_reference_reply": "We can help troubleshoot wireless charging. Remove any thick case or metal attachments, center your device on the pad, and restart your iPhone. Let us know if you still see no charge icon.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-031",
+    "customer_tweet": "My iPhone is stuck on the Apple logo with the loading bar at 99% for 4 hours after updating to iOS 11.",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "Stuck iOS update; standard recovery mode / iTunes update troubleshooting.",
+    "gold_reference_reply": "We can help you get past the Apple logo screen. Connect your iPhone to a computer with iTunes/Finder, put it in Recovery Mode, and choose Update (not Restore) to reinstall iOS without losing data.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-032",
+    "customer_tweet": "Every time I open Instagram or WhatsApp on iOS 11.1, it crashes immediately back to home screen.",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "App crash troubleshooting: check App Store updates, restart, or reinstall app.",
+    "gold_reference_reply": "Let us get your apps working properly. Open the App Store to ensure both apps are on the latest versions, force restart your device, and try deleting and reinstalling the affected apps.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-033",
+    "customer_tweet": "iOS update failed with 'An error occurred installing iOS 11.0.3'. I have 10GB free space.",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "Corrupted OTA update file; guide user to delete installer in iPhone Storage and re-download.",
+    "gold_reference_reply": "We can help resolve that error. Go to Settings > General > iPhone Storage, find the iOS update file in the list, tap Delete Update, and restart your phone before trying again.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-034",
+    "customer_tweet": "My iPhone is caught in an infinite bootloop flashing the Apple logo every 5 seconds. I cannot back up my data!",
+    "true_intent": "software_os_update",
+    "true_escalate": true,
+    "true_escalation_reason": "Critical bootloop risking complete data loss; escalate to human specialist for recovery guidance.",
+    "gold_reference_reply": "We know how crucial your data is. Connect with us via DM right away so our technical team can guide you through safe recovery mode options without erasing your device.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-035",
+    "customer_tweet": "Keyboard typing lag is awful on iOS 11! Letters appear 3 seconds after I type them.",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "Known iOS keyboard dictionary cache issue; guide user to reset keyboard dictionary.",
+    "gold_reference_reply": "We can help eliminate that keyboard lag! Go to Settings > General > Reset and select Reset Keyboard Dictionary. A simple restart after this should restore smooth typing.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-036",
+    "customer_tweet": "How can I downgrade my iPhone back to iOS 10? The new update ruined my device speed.",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "Policy explanation: Apple does not sign older iOS versions once updated, but provide speed optimization steps.",
+    "gold_reference_reply": "Apple stops signing older iOS versions shortly after new releases for security reasons, so downgrading is not supported. We can help optimize performance on your current version—DM us your device model!",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-037",
+    "customer_tweet": "My System / 'Other' storage is taking up 45GB out of my 64GB phone! How do I clear this?",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "Known iOS storage cache bug; resolve via iTunes/computer sync and cache flush.",
+    "gold_reference_reply": "That storage cache can be cleared! Connect your iPhone to a computer with iTunes or Finder, let it perform a full sync, and disconnect. This clears cached system log files and frees up space.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-038",
+    "customer_tweet": "The Calculator app gives 1+2+3 = 24 on iOS 11. Why is this bug not fixed yet?",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "Known animation lag bug in early iOS 11; addressed in iOS 11.2 update.",
+    "gold_reference_reply": "This animation timing issue was resolved in iOS 11.2. Please check Settings > General > Software Update to install the newest update which completely fixes this behavior.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-039",
+    "customer_tweet": "My screen is completely unresponsive to touch after updating to iOS 11.0.1. Can't even unlock it.",
+    "true_intent": "software_os_update",
+    "true_escalate": true,
+    "true_escalation_reason": "Digitizer touch unresponsiveness post-update could be firmware driver freeze or hardware digitizer failure.",
+    "gold_reference_reply": "Try a force restart first (press Volume Up, Volume Down, then hold Power until the Apple logo appears). If touch remains completely dead, please DM us so we can arrange hardware diagnostics.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-040",
+    "customer_tweet": "Can I update to iOS 11 on my iPhone 5c?",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "Compatibility clarification: 32-bit devices (iPhone 5/5c) do not support 64-bit iOS 11.",
+    "gold_reference_reply": "iOS 11 requires a 64-bit device and is compatible with iPhone 5s and later. The iPhone 5c is capped at iOS 10.3.3 and cannot update to iOS 11.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-041",
+    "customer_tweet": "During the update my MacBook screen turned black with a flashing folder and question mark icon.",
+    "true_intent": "software_os_update",
+    "true_escalate": true,
+    "true_escalation_reason": "Flashing question mark indicates startup disk cannot be found or corrupted APFS container. Escalate to Mac specialist.",
+    "gold_reference_reply": "A flashing folder with a question mark means your Mac cannot find a working system startup disk. Restart holding Command + R for macOS Recovery. DM us if Disk Utility doesn't see your drive.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-042",
+    "customer_tweet": "Notifications are not showing up on lockscreen since yesterday even though notifications are turned ON in settings.",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "Do Not Disturb or Focus / notification preview setting misconfiguration.",
+    "gold_reference_reply": "Let us check your notification settings. Ensure Do Not Disturb is turned off in Control Center, and verify in Settings > Notifications > Show Previews that it is set to Always or When Unlocked.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-043",
+    "customer_tweet": "All my contacts disappeared from my phone right after updating to iOS 11! Help!",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "iCloud Contacts toggle disconnected during OS update.",
+    "gold_reference_reply": "Don't panic, your contacts are likely safe in the cloud! Go to Settings > [Your Name] > iCloud, toggle Contacts off and then back on, and choose Merge. Check if they reappear.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-044",
+    "customer_tweet": "iTunes error 4013 when trying to restore my iPhone. What does that mean?",
+    "true_intent": "software_os_update",
+    "true_escalate": true,
+    "true_escalation_reason": "Error 4013 is frequently related to baseband or NAND hardware communication failure during restore.",
+    "gold_reference_reply": "Error 4013 often relates to USB communication or hardware components. Try using a genuine Apple cable, different USB port, and updating iTunes. If it persists, DM us to discuss repair options.",
+    "difficulty": "hard",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-045",
+    "customer_tweet": "My 3D Touch feels completely broken and unresponsive since updating.",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "Accessibility 3D Touch sensitivity setting check.",
+    "gold_reference_reply": "We can help you calibrate that. Head to Settings > General > Accessibility > 3D Touch and adjust the sensitivity slider between Light, Medium, and Firm to test.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-046",
+    "customer_tweet": "Update is paused on 'Verifying update...' for the past 2 hours. What should I do?",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "Network timeout during verification signature check.",
+    "gold_reference_reply": "Let us restart the verification process. Lock and wake your phone, or perform a quick restart. Make sure your device is connected to a strong Wi-Fi network and has at least 50% battery.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-047",
+    "customer_tweet": "The new update completely bricked my device and your chat support refused to help me yesterday! Fix this now!",
+    "true_intent": "software_os_update",
+    "true_escalate": true,
+    "true_escalation_reason": "Customer complaints of bricked device and previous poor agent interaction; requires tier-2 escalation.",
+    "gold_reference_reply": "We sincerely apologize for the frustration this has caused. We want to make this right. Please DM us your case number and serial number so our Senior Support team can step in immediately.",
+    "difficulty": "hard",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-048",
+    "customer_tweet": "Why did iOS 11 remove the 3D touch app switcher gesture from the left edge of the screen?",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "Feature change notice; brought back in subsequent update.",
+    "gold_reference_reply": "Apple temporarily removed the 3D Touch multitasking gesture in initial iOS 11 versions due to a technical constraint, but brought it back in iOS 11.1. Updating your iOS will restore it!",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-049",
+    "customer_tweet": "Control center flashlight and camera buttons are frozen and don't respond when pressed.",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "SpringBoard UI glitch resolved by soft restart.",
+    "gold_reference_reply": "A quick restart of your device usually clears up frozen Control Center controls. If you're on iPhone 8 or later, press Vol Up, Vol Down, and hold the side button until the Apple logo appears.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-050",
+    "customer_tweet": "My phone keeps randomly restarting every 2 minutes exactly, even in safe mode.",
+    "true_intent": "software_os_update",
+    "true_escalate": true,
+    "true_escalation_reason": "Panic log kernel crash (often thermal sensor / battery communication failure causing watchdog timer reboot).",
+    "gold_reference_reply": "A repetitive restart cycle like this points to kernel panic logs or a hardware sensor issue. Please DM us so we can review your diagnostics and set up service options.",
+    "difficulty": "hard",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-051",
+    "customer_tweet": "Can I install iOS beta without a paid developer account?",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "Apple Beta Software Program public beta availability explanation.",
+    "gold_reference_reply": "Yes! You can enroll for free in the Apple Beta Software Program at beta.apple.com using your regular Apple ID to test public beta builds.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-052",
+    "customer_tweet": "Apps take 10 seconds to open and freeze when switching between them on iOS 11.0.2.",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "Memory pressure / low device storage troubleshooting.",
+    "gold_reference_reply": "Let us check your device storage. Head to Settings > General > iPhone Storage to make sure you have at least 2-3 GB of free space, and perform a force restart.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-053",
+    "customer_tweet": "AirDrop won't send or receive photos to anyone since updating my iPad.",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "AirDrop discoverability settings troubleshooting.",
+    "gold_reference_reply": "We can help get AirDrop working again. In Control Center, long press the network square, tap AirDrop, and ensure it is set to Everyone. Also verify Wi-Fi and Bluetooth are active on both devices.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-054",
+    "customer_tweet": "My watch won't finish pairing with my phone after software update. It gets stuck on 'Syncing'.",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "WatchOS sync hang; hard restart both devices and re-initiate pairing.",
+    "gold_reference_reply": "Let us get your Apple Watch synced up. Restart both your iPhone and Apple Watch, keep them close together on their chargers, and reopen the Watch app to finish setup.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-055",
+    "customer_tweet": "My iPad screen went black while updating and now my computer says 'iTunes must recover this device'.",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "Device entered DFU or recovery mode during interrupted firmware flash.",
+    "gold_reference_reply": "This means your iPad is in Recovery Mode. In the iTunes or Finder prompt, choose Update first to reinstall iPadOS without wiping your files. DM us if you get an error code.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-056",
+    "customer_tweet": "Photos app has been saying 'Curating...' for 3 weeks and battery is always hot.",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "Photos machine learning indexing stuck on corrupted image/video.",
+    "gold_reference_reply": "Photos curating pauses during heavy usage and only runs when connected to power and Wi-Fi overnight. Leave your device plugged in overnight with screen locked to allow processing to finish.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-057",
+    "customer_tweet": "Siri says 'Sorry, I am having trouble understanding right now' for every command after the update.",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "Siri network toggle or speech recognition model re-download.",
+    "gold_reference_reply": "Let us refresh Siri. Go to Settings > Siri & Search, turn off Listen for Hey Siri and Press Side Button for Siri, restart your device, and turn them back on.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-058",
+    "customer_tweet": "The update broke my carrier visual voicemail. It says voicemail unavailable.",
+    "true_intent": "software_os_update",
+    "true_escalate": false,
+    "true_escalation_reason": "Carrier settings update required.",
+    "gold_reference_reply": "Let us check for a carrier settings update. Go to Settings > General > About. If a carrier update is available, a prompt will appear automatically to install it.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-059",
+    "customer_tweet": "My entire phone encrypted and locked me out with an unknown passcode after rebooting!",
+    "true_intent": "software_os_update",
+    "true_escalate": true,
+    "true_escalation_reason": "Potential security compromise or severe firmware corruption; requires security verification.",
+    "gold_reference_reply": "We take device security very seriously. Please DM us right away so our Account and Security support team can assist you with verification and device recovery.",
+    "difficulty": "hard",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-060",
+    "customer_tweet": "Camera app shows a black preview screen and flashlight is greyed out after updating to iOS 11.",
+    "true_intent": "software_os_update",
+    "true_escalate": true,
+    "true_escalation_reason": "Black camera screen with greyed flashlight usually indicates camera module hardware disconnection or failure.",
+    "gold_reference_reply": "If a force restart doesn't bring the camera preview back, this indicates the rear camera sensor may have experienced a hardware fault. Please DM us so we can arrange a hardware inspection.",
+    "difficulty": "hard",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-061",
+    "customer_tweet": "My Apple ID has been locked for security reasons and I cannot access my iCloud email or purchases.",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": false,
+    "true_escalation_reason": "Standard automated account unlock via iforgot.apple.com.",
+    "gold_reference_reply": "We can help you regain access. Visit iforgot.apple.com to unlock your account using your trusted phone number or trusted device. DM us if you run into any hurdles.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-062",
+    "customer_tweet": "Someone from Russia logged into my Apple ID and changed my trusted phone number and password! I am locked out!",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": true,
+    "true_escalation_reason": "Active account takeover / security breach requiring immediate human security team intervention.",
+    "gold_reference_reply": "We understand the urgency of this security issue. Please DM us immediately so our specialized Account Security team can step in to protect your data and restore account control.",
+    "difficulty": "hard",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-063",
+    "customer_tweet": "I am not getting the 6-digit two-factor verification code on my trusted number.",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": false,
+    "true_escalation_reason": "2FA code delivery options: click Didn't get code or use trusted device settings.",
+    "gold_reference_reply": "When prompted for the code, tap Didn't get a verification code? and select Send SMS or Call Me. On any signed-in Apple device, you can also generate a code in Settings > Apple ID > Password & Security.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-064",
+    "customer_tweet": "My iCloud storage is full because of photos, how do I stop it from backing up without deleting photos from my phone?",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": false,
+    "true_escalation_reason": "iCloud Photos management guidance; explain optimize storage vs disabling backup.",
+    "gold_reference_reply": "You can manage your iCloud photo storage in Settings > [Your Name] > iCloud > Photos. Selecting Optimize iPhone Storage keeps full-resolution copies in iCloud while saving device space, or you can toggle off iCloud Photos.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-065",
+    "customer_tweet": "I forgot my Apple ID password and my recovery email is an old domain that no longer exists.",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": true,
+    "true_escalation_reason": "Loss of primary recovery factors requires initiating Apple Account Recovery waiting period with human advisor.",
+    "gold_reference_reply": "If your recovery email is inaccessible, you can start automated Account Recovery at iforgot.apple.com using your trusted phone number. DM us if you need help navigating the recovery steps.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-066",
+    "customer_tweet": "How do I remove an old iPhone from my iCloud account so the new owner can activate it?",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": false,
+    "true_escalation_reason": "Standard remote Activation Lock removal via iCloud.com/find.",
+    "gold_reference_reply": "You can remove it remotely! Sign in to iCloud.com/find, select the old iPhone from All Devices, tap Erase iPhone, and then click Remove from Account.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-067",
+    "customer_tweet": "I bought a used iPad on eBay and it has an iCloud Activation Lock asking for the previous owner's password.",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": true,
+    "true_escalation_reason": "Activation Lock cannot be bypassed without original proof of purchase or previous owner intervention.",
+    "gold_reference_reply": "Activation Lock is a security feature tied to the original owner Apple ID. You will need to contact the seller to remove the device from their account. We cannot bypass this without official original purchase documentation.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-068",
+    "customer_tweet": "My notes and reminders stopped syncing between my Mac and my iPhone.",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": false,
+    "true_escalation_reason": "iCloud sync troubleshooting: verify Apple ID matches and toggle service.",
+    "gold_reference_reply": "Let us get your sync back on track. Make sure both devices are logged into the exact same Apple ID, then toggle Notes and Reminders off and on in Settings > [Your Name] > iCloud.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-069",
+    "customer_tweet": "Can I merge two different Apple IDs into a single account?",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": false,
+    "true_escalation_reason": "Policy clarification: Apple IDs cannot be merged, but Family Sharing can share purchases.",
+    "gold_reference_reply": "Apple IDs cannot be merged into a single account. However, you can use Family Sharing to share purchased apps, subscriptions, and storage between both IDs!",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-070",
+    "customer_tweet": "Account recovery says I have to wait 14 days to reset my password. Is there any way to speed this up?!",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": false,
+    "true_escalation_reason": "Apple security policy explanation: Account Recovery waiting period is strictly automated and cannot be expedited.",
+    "gold_reference_reply": "We understand waiting is difficult. The Account Recovery evaluation period is fully automated for security protection and cannot be expedited by support advisors. You can check status at iforgot.apple.com.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-071",
+    "customer_tweet": "I keep getting popups asking for my Apple ID password every 5 minutes even after entering it correctly.",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": false,
+    "true_escalation_reason": "Corrupted credential keychain or outdated App Store purchase token; resolved by sign out/in.",
+    "gold_reference_reply": "We can stop those repetitive password popups! Sign out of your Apple ID in Settings > [Your Name] > Sign Out, restart your iPhone, and sign back in.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-072",
+    "customer_tweet": "My deceased father had an iPad, how do we gain access to his account and family photos?",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": true,
+    "true_escalation_reason": "Deceased account transfer / legacy legal documentation requires human legal/account specialist.",
+    "gold_reference_reply": "We offer our deepest condolences. Accessing a deceased family member's account requires legal documentation (death certificate and court order). Please DM us so an advisor can guide you through the formal process.",
+    "difficulty": "hard",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-073",
+    "customer_tweet": "How do I change the primary email address on my Apple ID from gmail to outlook?",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": false,
+    "true_escalation_reason": "Self-service instructions for changing Apple ID username.",
+    "gold_reference_reply": "You can change your Apple ID email by visiting appleid.apple.com. Sign in, go to the Sign-In and Security section, click Apple ID, and enter your new email address.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-074",
+    "customer_tweet": "Find My iPhone shows my lost device is currently in a warehouse 10 miles away. Can you call the police for me?",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": false,
+    "true_escalation_reason": "Policy boundary: Apple cannot contact law enforcement on customer's behalf; advise marking as Lost.",
+    "gold_reference_reply": "Apple cannot contact local law enforcement on your behalf. We recommend putting your device into Lost Mode via iCloud.com/find and reporting the location directly to your local police department.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-075",
+    "customer_tweet": "My child accidentally bought $200 of Roblox coins using my Apple ID. Can I set a passcode to prevent this?",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": false,
+    "true_escalation_reason": "Screen Time / Content & Privacy Restrictions setup for in-app purchases.",
+    "gold_reference_reply": "You can prevent future unauthorized purchases easily! Go to Settings > Screen Time > Content & Privacy Restrictions > iTunes & App Store Purchases, and set In-app Purchases to Don't Allow.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-076",
+    "customer_tweet": "I'm receiving calendar invites in Chinese from unknown spammers every day. How do I stop this?",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": false,
+    "true_escalation_reason": "Known iCloud calendar spam; guide user to route calendar invites to email or report junk.",
+    "gold_reference_reply": "We can help you block iCloud calendar spam. Log in to iCloud.com on a browser, open Calendar, go to Preferences > Advanced, and change Invitations to Email to [your address] so spam filters catch them.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-077",
+    "customer_tweet": "Someone is trying to reset my password, I got 5 unauthorized 2FA prompts in the middle of the night!",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": true,
+    "true_escalation_reason": "Active brute-force or social engineering attack on user's credentials; escalate to security.",
+    "gold_reference_reply": "Always tap Don't Allow on those prompts. Since someone knows your password, change your Apple ID password immediately at appleid.apple.com. Please DM us so we can verify your account security.",
+    "difficulty": "hard",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-078",
+    "customer_tweet": "Why am I being charged $0.99 every month for iCloud storage when I never signed up for it?",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": false,
+    "true_escalation_reason": "iCloud 50GB tier subscription explanation and downgrade instructions.",
+    "gold_reference_reply": "The $0.99/month charge is for the 50GB iCloud storage plan. You can view or downgrade this at any time in Settings > [Your Name] > iCloud > Manage Storage > Change Storage Plan > Downgrade Options.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-079",
+    "customer_tweet": "My iCloud backup has been failing for the last 2 weeks saying 'The last backup could not be completed'.",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": false,
+    "true_escalation_reason": "iCloud backup failure troubleshooting: check available cloud storage, Wi-Fi, or delete old backup.",
+    "gold_reference_reply": "We can help resolve that backup failure. Check Settings > [Your Name] > iCloud > Manage Storage to ensure sufficient free space. If space is adequate, delete the existing backup and try Back Up Now.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-080",
+    "customer_tweet": "I lost my trusted phone number and don't have any other Apple devices. How do I log in?",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": true,
+    "true_escalation_reason": "Total loss of 2FA authentication factors requiring manual Account Recovery escalation.",
+    "gold_reference_reply": "When you lack access to trusted devices and numbers, Account Recovery is the secure path forward. Start the process at iforgot.apple.com and DM us if you need guidance on what to expect.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-081",
+    "customer_tweet": "Can Family Sharing members see my personal browsing history and photos?",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": false,
+    "true_escalation_reason": "Privacy assurance and feature explanation.",
+    "gold_reference_reply": "No, your personal photos, files, and Safari browsing history remain strictly private to your own Apple ID. Family Sharing only shares purchased apps, subscriptions, and a shared photo album if created.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-082",
+    "customer_tweet": "My Apple ID was disabled in the App Store and iTunes. I can't update any of my apps!",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": true,
+    "true_escalation_reason": "Account disabled in App Store/iTunes is an administrative lock requiring Apple Billing/Support specialist to unlock.",
+    "gold_reference_reply": "When an Apple ID is disabled in the App Store, it requires an advisor to review the account flags. Please DM us so we can connect you directly with an iTunes Support advisor.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-083",
+    "customer_tweet": "I restored my new phone from iCloud backup but all my photos say 'Downloading 1 of 5,000' and nothing moves.",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": false,
+    "true_escalation_reason": "iCloud Photos download paused on battery or metered connection.",
+    "gold_reference_reply": "Photo downloads from iCloud pause when low power mode is on or Wi-Fi is intermittent. Plug your phone into power, connect to reliable Wi-Fi, and scroll to the bottom of the Photos app to tap Resume.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-084",
+    "customer_tweet": "How do I turn on two-factor authentication on iOS 11?",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": false,
+    "true_escalation_reason": "Standard 2FA setup instructions.",
+    "gold_reference_reply": "Great step for account security! Go to Settings > [Your Name] > Password & Security, tap Turn On Two-Factor Authentication, and follow the prompts to register your trusted phone number.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-085",
+    "customer_tweet": "An unauthorized device from Nigeria just appeared in my iCloud devices list! I removed it, what else should I do?",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": true,
+    "true_escalation_reason": "Compromised credential event; prompt password reset and security review.",
+    "gold_reference_reply": "You took the right first step! Immediately change your Apple ID password and enable 2-Factor Authentication at appleid.apple.com. Please DM us so we can conduct a full security audit of your account.",
+    "difficulty": "hard",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-086",
+    "customer_tweet": "Can I transfer my purchases from a US Apple ID to a UK Apple ID?",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": false,
+    "true_escalation_reason": "Store region policy explanation: purchases remain tied to regional store ID, but country can be changed.",
+    "gold_reference_reply": "Purchases cannot be transferred between two accounts. However, you can change your existing Apple ID country/region in Settings > [Your Name] > iTunes & App Store > View Apple ID > Country/Region.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-087",
+    "customer_tweet": "I forgot my security questions from 2011 and have no rescue email. How do I reset them?",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": true,
+    "true_escalation_reason": "Forgotten security questions with missing rescue email requires identity verification escalation.",
+    "gold_reference_reply": "Resetting security questions without a rescue email requires advisor identity verification. Please DM us so we can verify your identity and help you upgrade to Two-Factor Authentication.",
+    "difficulty": "hard",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-088",
+    "customer_tweet": "My iCloud Keychain passwords are gone after I turned off iCloud Keychain and turned it back on.",
+    "true_intent": "account_appleid_icloud",
+    "true_escalate": false,
+    "true_escalation_reason": "iCloud Keychain sync delay; verify 2FA and approve from trusted device.",
+    "gold_reference_reply": "Keychain credentials usually re-sync within a few minutes once verified. Check Settings > [Your Name] > iCloud > Keychain and ensure it shows as On and your device has verified its security code.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-089",
+    "customer_tweet": "My iPhone 6 suddenly says 'No SIM' and won't connect to cellular network at all.",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "Standard No SIM troubleshooting: eject SIM tray, clean SIM, reinsert, restart phone.",
+    "gold_reference_reply": "We can help you get reconnected. Turn on Airplane Mode for 10 seconds and turn it off. If it still says No SIM, remove your SIM card with a paperclip, wipe it gently with a soft cloth, and reinsert.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-090",
+    "customer_tweet": "Wi-Fi toggle is completely greyed out and I cannot toggle it on in Settings. Bluetooth also spinning forever.",
+    "true_intent": "connectivity_network",
+    "true_escalate": true,
+    "true_escalation_reason": "Greyed-out Wi-Fi toggle is a classic Wi-Fi IC / antenna hardware failure requiring Apple Store service.",
+    "gold_reference_reply": "A greyed-out Wi-Fi switch is often an indicator of a hardware issue with the Wi-Fi chip. Try Reset Network Settings first. If it remains greyed out, DM us to set up an Apple Store repair appointment.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-091",
+    "customer_tweet": "My AirPods keep disconnecting every 30 seconds during phone calls on my iPhone 8.",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "AirPods Bluetooth connection reset procedure.",
+    "gold_reference_reply": "Let us reset your AirPods connection. Put them in the charging case, hold the setup button on the back for 15 seconds until the light flashes amber then white, and reconnect to your iPhone.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-092",
+    "customer_tweet": "Bluetooth in my car skips and stutters constantly since updating to iOS 11.",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "Car stereo Bluetooth cache conflict; forget device and re-pair.",
+    "gold_reference_reply": "We can help fix that audio stutter. Go to Settings > Bluetooth, tap the 'i' next to your car stereo, and select Forget This Device. Also delete your phone from your car stereo memory, then re-pair.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-093",
+    "customer_tweet": "My iPhone says 'Searching...' where carrier signal should be, and won't make any calls.",
+    "true_intent": "connectivity_network",
+    "true_escalate": true,
+    "true_escalation_reason": "iPhone 7 No Service / Searching issue (known Apple repair program for Qualcomm baseband IC).",
+    "gold_reference_reply": "If you are using an iPhone 7, there is a known service program for devices showing No Service due to a main logic board component. Please DM us your model number so we can check your eligibility.",
+    "difficulty": "hard",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-094",
+    "customer_tweet": "Wi-Fi connects but says 'No Internet Connection' while all my other devices in the house work fine.",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "DNS/DHCP lease renewal or Reset Network Settings.",
+    "gold_reference_reply": "Let us refresh your network configuration. Go to Settings > General > Reset > Reset Network Settings. Note that this resets saved Wi-Fi passwords, so you'll just need to re-enter your home password.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-095",
+    "customer_tweet": "Personal Hotspot option is completely missing from my Settings menu on iPhone.",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "Carrier provisioning or Cellular Data APN setting check.",
+    "gold_reference_reply": "Personal Hotspot is provisioned by your cellular carrier. Check Settings > Cellular > Personal Hotspot. If it still doesn't appear, contact your carrier to ensure hotspot is enabled on your plan.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-096",
+    "customer_tweet": "Left AirPod won't connect or play sound at all, only the right one works.",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "AirPod charging contact cleaning and hard reset.",
+    "gold_reference_reply": "Make sure the left AirPod silver charging stem is clean and making contact in the case. Place both in the case for 30 seconds, open the lid near your iPhone, and check battery status for each AirPod.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-097",
+    "customer_tweet": "My cellular data toggle turns itself off automatically whenever I leave home Wi-Fi.",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "Wi-Fi Assist or cellular data restriction profile issue.",
+    "gold_reference_reply": "Let us inspect your cellular settings. Go to Settings > Cellular, scroll down and check Wi-Fi Assist. Also check Settings > General > VPN & Device Management to ensure no profiles are blocking cellular.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-098",
+    "customer_tweet": "GPS location is wildly inaccurate, placing me 3 miles out in the ocean in Maps.",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "Location Services recalibration / compass calibration.",
+    "gold_reference_reply": "We can help recalibrate your GPS! Ensure Wi-Fi is turned ON (even if not connected to a network, it assists location accuracy), and toggle Location Services off and on in Settings > Privacy > Location Services.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-099",
+    "customer_tweet": "Does iPhone 7 support 5GHz Wi-Fi bands?",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "Technical hardware specifications confirmation.",
+    "gold_reference_reply": "Yes! The iPhone 7 supports 802.11a/b/g/n/ac Wi‑Fi with MIMO on both 2.4GHz and 5GHz frequencies.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-100",
+    "customer_tweet": "Bluetooth refuses to pair with my third-party fitness tracker, saying pairing rejected.",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "Companion app Bluetooth pairing workflow clarification.",
+    "gold_reference_reply": "Many fitness trackers require pairing through their companion app rather than the iOS Bluetooth settings. Open the companion app, place the tracker in pairing mode, and follow app instructions.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-101",
+    "customer_tweet": "I can receive calls, but nobody can hear me on cellular calls unless I use speakerphone.",
+    "true_intent": "connectivity_network",
+    "true_escalate": true,
+    "true_escalation_reason": "Bottom primary microphone hardware failure or Audio IC failure (iPhone 7 Loop Disease).",
+    "gold_reference_reply": "Since speakerphone uses a different microphone, this suggests the bottom primary microphone or audio hardware may need inspection. DM us your iPhone model so we can run an audio diagnostic.",
+    "difficulty": "hard",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-102",
+    "customer_tweet": "My cellular speed is stuck on 3G and won't connect to LTE even in downtown areas.",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "Voice & Data LTE toggle check in Settings.",
+    "gold_reference_reply": "Let us check your LTE settings! Head to Settings > Cellular > Cellular Data Options > Voice & Data and make sure LTE is selected. Also toggle Airplane Mode on and off to reconnect.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-103",
+    "customer_tweet": "AirDrop icon in Control Center says 'Receiving Off' and tapping it does nothing.",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "Screen Time / Restrictions blocking AirDrop.",
+    "gold_reference_reply": "If AirDrop cannot be changed in Control Center, check Settings > Screen Time > Content & Privacy Restrictions > Allowed Apps to make sure AirDrop is allowed.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-104",
+    "customer_tweet": "How do I share my Wi-Fi password with my friend's iPhone automatically?",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "iOS Wi-Fi password sharing feature explanation.",
+    "gold_reference_reply": "Make sure both devices have Wi-Fi and Bluetooth on, and each other's Apple ID saved in Contacts. When your friend tries to connect, hold your unlocked iPhone near theirs and tap Share Password!",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-105",
+    "customer_tweet": "My Mac drops Wi-Fi every single time it wakes from sleep. I have to turn Wi-Fi off and on.",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "macOS network location / plist preference cleanup.",
+    "gold_reference_reply": "We can resolve that sleep wake drop! Try creating a new Network Location in System Preferences > Network > Edit Locations, and delete the existing Wi-Fi service then re-add it.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-106",
+    "customer_tweet": "I dropped my phone in the toilet, now it has 'No Service' and the SIM card tray smells wet.",
+    "true_intent": "connectivity_network",
+    "true_escalate": true,
+    "true_escalation_reason": "Liquid ingress causing baseband failure; liquid damage requires store inspection.",
+    "gold_reference_reply": "Do not charge or power on the device while moisture is present. Liquid damage requires an inspection by a technician. DM us so we can guide you to an Apple Authorized Service Provider.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-107",
+    "customer_tweet": "Cellular calls keep failing after exactly 15 minutes every time.",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "Carrier network timeout or call forwarding rule.",
+    "gold_reference_reply": "Call cutoffs at consistent intervals usually relate to carrier session timeouts. We recommend resetting network settings in Settings > General > Reset and contacting your carrier to refresh network registration.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-108",
+    "customer_tweet": "Can I use Apple Pay without cellular data or Wi-Fi?",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "NFC Secure Element feature explanation.",
+    "gold_reference_reply": "Yes! Apple Pay uses the built-in Secure Element and NFC chip to communicate with the payment terminal, so you do not need active cellular data or Wi-Fi to make in-store purchases.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-109",
+    "customer_tweet": "My Bluetooth device list has 20 unknown devices called 'Miscellaneous'. How do I clear them?",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "Reset Network Settings clears Bluetooth cache list.",
+    "gold_reference_reply": "You can clear cached Bluetooth discovery records by resetting network settings (Settings > General > Reset > Reset Network Settings) and toggling Bluetooth off and on.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-110",
+    "customer_tweet": "My cellular data roaming charges were $400 because my phone downloaded an update while abroad!",
+    "true_intent": "connectivity_network",
+    "true_escalate": true,
+    "true_escalation_reason": "Carrier roaming dispute and financial impact requiring customer guidance and escalation.",
+    "gold_reference_reply": "We understand this unexpected charge is alarming. Roaming data rates are billed directly by your mobile network operator. We recommend contacting your carrier to dispute roaming charges. DM us if we can assist with settings.",
+    "difficulty": "hard",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-111",
+    "customer_tweet": "Does the Apple Watch Series 3 GPS + Cellular work with roaming internationally?",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "Hardware / cellular roaming technical limitation explanation.",
+    "gold_reference_reply": "Apple Watch Series 3 Cellular models do not support international roaming. While abroad, your watch will still connect to your iPhone via Bluetooth or to compatible Wi-Fi networks.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-112",
+    "customer_tweet": "My phone won't connect to my enterprise WPA2 802.1X Wi-Fi network with certificate.",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "Enterprise certificate trust settings in iOS.",
+    "gold_reference_reply": "For enterprise 802.1X networks, you may need to trust the root certificate in Settings > General > About > Certificate Trust Settings. Also check with your IT administrator for the required profile.",
+    "difficulty": "hard",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-113",
+    "customer_tweet": "Every time I turn Bluetooth on, my Wi-Fi speed drops from 100 Mbps to 1 Mbps.",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "2.4GHz coexistence interference; recommend 5GHz band.",
+    "gold_reference_reply": "This happens when your Wi-Fi is on the 2.4GHz frequency, which shares antennas and bandwidth with Bluetooth. Connecting your iPhone to your router 5GHz Wi-Fi band will completely eliminate this interference.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-114",
+    "customer_tweet": "My SIM card tray got stuck and broke inside the phone when I tried to pull it out.",
+    "true_intent": "connectivity_network",
+    "true_escalate": true,
+    "true_escalation_reason": "Physical tray broken inside chassis requires store technician tools to extract safely.",
+    "gold_reference_reply": "Please do not try to pry it with sharp objects as that can damage the internal logic board pins. Please visit an Apple Store Genius Bar where our technicians can safely extract the broken tray.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-115",
+    "customer_tweet": "Can I use two different eSIMs at the same time on iPhone X?",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "Device capability clarification: iPhone X only supports a single physical nano-SIM (Dual SIM started with XS).",
+    "gold_reference_reply": "The iPhone X only supports a single physical nano-SIM card. Dual SIM (nano-SIM and eSIM) capability was introduced with iPhone XS, XR, and newer models.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-116",
+    "customer_tweet": "Audio keeps cutting out in my BeatsX earphones whenever I put the phone in my back pocket.",
+    "true_intent": "connectivity_network",
+    "true_escalate": false,
+    "true_escalation_reason": "Body absorption Bluetooth signal interference and firmware check.",
+    "gold_reference_reply": "Human tissue can absorb high-frequency Bluetooth signals. We recommend keeping the phone in a front pocket, and resetting your BeatsX by holding the power and volume down buttons for 10 seconds.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-117",
+    "customer_tweet": "I was just charged $59.99 for an app subscription I cancelled during the free trial! I want a full refund!",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": true,
+    "true_escalation_reason": "Refund dispute and financial chargeback risk requiring iTunes billing specialist intervention.",
+    "gold_reference_reply": "We understand how frustrating unexpected charges are. You can request a refund directly at reportaproblem.apple.com, or DM us your Apple ID email and order number so our billing team can assist you.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-118",
+    "customer_tweet": "How do I cancel my Apple Music subscription before the renewal date?",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": false,
+    "true_escalation_reason": "Standard self-service subscription cancellation workflow.",
+    "gold_reference_reply": "You can manage or cancel that anytime! Go to Settings > [Your Name] > Subscriptions (or iTunes & App Store > View Apple ID > Subscriptions), select Apple Music, and tap Cancel Subscription.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-119",
+    "customer_tweet": "My bank statement shows 'ITUNES.COM/BILL' for $9.99 but I have no purchases in my purchase history.",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": true,
+    "true_escalation_reason": "Potential fraudulent card use or family member purchase; requires billing investigation.",
+    "gold_reference_reply": "If a charge doesn't match your purchase history, check if any Family Sharing members made a purchase. If not, DM us so our billing specialists can help identify the transaction and secure your payment details.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-120",
+    "customer_tweet": "My payment method was declined in the App Store even though I have plenty of funds in my account.",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": false,
+    "true_escalation_reason": "Billing address mismatch or bank security hold; guide user on updating payment details.",
+    "gold_reference_reply": "We can help resolve that. Make sure your billing name and address in Settings > [Your Name] > Payment & Shipping match your bank records exactly. You may also contact your bank to verify no online authorization holds exist.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-121",
+    "customer_tweet": "I accidentally bought a $10 movie on iTunes instead of renting it. Can you help me change it to a rental?",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": false,
+    "true_escalation_reason": "Standard accidental purchase refund request via reportaproblem.apple.com.",
+    "gold_reference_reply": "Accidental purchases happen! Head to reportaproblem.apple.com, sign in with your Apple ID, find the movie, and select Request a refund choosing Didn't mean to purchase this item.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-122",
+    "customer_tweet": "You guys have charged me three times for the same month of Netflix through Apple billing! Give me my money back!",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": true,
+    "true_escalation_reason": "Duplicate billing error with customer anger; requires immediate billing advisor intervention.",
+    "gold_reference_reply": "We are very sorry for the duplicate billing. Please DM us your Apple ID and copies/screenshots of the duplicate invoices so our senior billing team can issue immediate refunds.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-123",
+    "customer_tweet": "How can I check all my active subscriptions on my iPhone?",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": false,
+    "true_escalation_reason": "Self-service instructions for viewing active subscriptions.",
+    "gold_reference_reply": "You can view all active and expired subscriptions by heading to Settings > [Your Name] > Subscriptions. Here you can change plans or cancel at any time.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-124",
+    "customer_tweet": "My Apple ID says 'There is a billing problem with a previous purchase' and won't let me download free apps!",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": false,
+    "true_escalation_reason": "Unpaid balance on account; guide user on clearing outstanding balance.",
+    "gold_reference_reply": "This message means there is an unpaid balance on your account. Go to Settings > [Your Name] > Payment & Shipping, update your payment method, and allow the balance to clear to resume downloading.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-125",
+    "customer_tweet": "Can I use an Apple Store Gift Card to pay for my monthly iCloud storage plan?",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": false,
+    "true_escalation_reason": "Gift card policy distinction: App Store & iTunes cards vs Apple Store retail cards.",
+    "gold_reference_reply": "App Store & iTunes Gift Cards can be used for iCloud storage and digital purchases, but Apple Store Gift Cards are only for physical hardware purchases at retail stores or online.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-126",
+    "customer_tweet": "I submitted a refund request 5 days ago on reportaproblem and have heard nothing back!",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": true,
+    "true_escalation_reason": "Delayed refund resolution exceeding standard 48-hour SLA; human escalation required.",
+    "gold_reference_reply": "Refund requests typically process within 48 hours. Please DM us your Apple ID and order number so we can check the status of your refund directly with our billing department.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-127",
+    "customer_tweet": "My in-app coins did not appear in Candy Crush after paying $4.99. Receipt came to email.",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": false,
+    "true_escalation_reason": "In-app purchase restore or developer contact workflow.",
+    "gold_reference_reply": "First, force close and reopen the app, or look for a Restore Purchases button inside the app settings. If the items still don't arrive, request a refund at reportaproblem.apple.com.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-128",
+    "customer_tweet": "Why was I charged a $1 authorization fee on my credit card when I added it to Apple Pay?",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": false,
+    "true_escalation_reason": "Temporary authorization hold explanation.",
+    "gold_reference_reply": "That $1 charge is a temporary pre-authorization hold from your bank to verify that your card is active. It will automatically disappear from your statement within a few days.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-129",
+    "customer_tweet": "I am threatening legal action if you do not refund the $500 my kid spent on FIFA packs this instant!",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": true,
+    "true_escalation_reason": "Legal threat with substantial financial amount; mandatory escalation to senior management.",
+    "gold_reference_reply": "We take these situations very seriously and want to help resolve this directly. Please DM us your Apple ID and phone number so a Senior Support Supervisor can contact you immediately.",
+    "difficulty": "hard",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-130",
+    "customer_tweet": "How do I remove my credit card from my Apple ID without adding a new one?",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": false,
+    "true_escalation_reason": "Selecting None payment method conditions (no active subscriptions or unpaid balances).",
+    "gold_reference_reply": "You can select None as your payment method in Settings > [Your Name] > Payment & Shipping. If None isn't available, make sure you have no active subscriptions, family sharing, or unpaid balance.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-131",
+    "customer_tweet": "Can I share my in-app purchases with my Family Sharing group?",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": false,
+    "true_escalation_reason": "App Store policy: consumable in-app purchases cannot be shared via Family Sharing.",
+    "gold_reference_reply": "While full app purchases and non-consumable upgrades can often be shared, consumable in-app purchases (like game coins or tokens) are non-shareable according to App Store guidelines.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-132",
+    "customer_tweet": "My AppleCare+ monthly payment failed and says my agreement is cancelled. Can I reinstate it?",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": true,
+    "true_escalation_reason": "AppleCare policy reinstatement requires agreement specialist review.",
+    "gold_reference_reply": "AppleCare agreements have a grace period for missed payments. Please DM us your agreement number and serial number so our AppleCare administration team can help reinstate your coverage.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-133",
+    "customer_tweet": "How do I print an official VAT receipt for my business tax deduction for an App Store purchase?",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": false,
+    "true_escalation_reason": "Self-service invoice printing via reportaproblem.apple.com.",
+    "gold_reference_reply": "You can view and print official VAT invoices by signing in at reportaproblem.apple.com with your Apple ID and clicking on the invoice button next to the relevant purchase.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-134",
+    "customer_tweet": "I got an email saying my Apple ID bought an iPhone X for $1,000, but there's a suspicious link in the email.",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": false,
+    "true_escalation_reason": "Phishing attempt detection and safety guidance.",
+    "gold_reference_reply": "This sounds like a fraudulent phishing email! Do not click any links or enter passwords. Check your real purchase history in iTunes/Settings. You can forward the email to reportphishing@apple.com.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-135",
+    "customer_tweet": "My account was debited twice for iCloud storage on the 1st and 15th of this month.",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": true,
+    "true_escalation_reason": "Billing ledger discrepancy requiring account lookup and credit refund.",
+    "gold_reference_reply": "We want to look into that double billing for you. Please DM us your Apple ID email and the transaction details so our billing department can verify the ledger and issue a credit.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-136",
+    "customer_tweet": "How do I redeem an iTunes Gift Card using my camera?",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": false,
+    "true_escalation_reason": "App Store gift card camera scan instructions.",
+    "gold_reference_reply": "Open the App Store, tap your profile icon in the top right corner, tap Redeem Gift Card or Code, and select Use Camera to scan the 16-digit code on the back of the card.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-137",
+    "customer_tweet": "I have $0.15 store credit remaining and it prevents me from changing my App Store country. Can you zero it?",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": true,
+    "true_escalation_reason": "Zeroing out remaining store balance requires advisor intervention to clear.",
+    "gold_reference_reply": "We can help you clear that remaining balance so you can change regions! Please DM us your Apple ID email so our billing team can assist you with zeroing out the $0.15 credit.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-138",
+    "customer_tweet": "Why does an app say 'Subscription Required' when I already paid $19.99 for lifetime access last year?",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": false,
+    "true_escalation_reason": "In-app purchase receipt restore troubleshooting.",
+    "gold_reference_reply": "Try tapping the Restore Purchases button inside the app settings to re-link your lifetime purchase receipt. If the developer changed their pricing model, you can also contact them via the App Store page.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-139",
+    "customer_tweet": "My credit card was stolen yesterday and someone is buying thousands in Apple products on it right now!",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": true,
+    "true_escalation_reason": "Live fraud in progress; urgent financial escalation and police/bank lock.",
+    "gold_reference_reply": "Please contact your credit card issuer immediately to freeze your card. We are escalating this report to our Fraud and Security department. Please DM us the transaction details so we can investigate.",
+    "difficulty": "hard",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-140",
+    "customer_tweet": "Does Apple give education discounts for university student subscriptions to Apple Music?",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": false,
+    "true_escalation_reason": "UNiDAYS student verification and Apple Music pricing information.",
+    "gold_reference_reply": "Yes! Apple Music offers a student membership discount (typically $4.99/mo). You can verify student status through UNiDAYS when signing up in the Music app or Settings > Subscriptions.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-141",
+    "customer_tweet": "I was promised a refund on the phone 2 weeks ago and nothing has posted to my bank.",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": true,
+    "true_escalation_reason": "Unresolved customer promise past standard banking credit posting window.",
+    "gold_reference_reply": "Refunds usually take up to 30 days depending on financial institution policies, but we want to confirm the refund was processed. Please DM us your case number and Apple ID so we can verify.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-142",
+    "customer_tweet": "Can I get an itemized bill for all my family members' App Store purchases?",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": false,
+    "true_escalation_reason": "Family organizer purchase history check via reportaproblem or device settings.",
+    "gold_reference_reply": "As the Family Organizer, you receive an itemized email receipt for every purchase. You can also view all family transactions at reportaproblem.apple.com or in iTunes Purchase History.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-143",
+    "customer_tweet": "I got an alert that my Apple Pay card has been suspended by issuer.",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": false,
+    "true_escalation_reason": "Bank issuer card suspension; customer must contact bank directly.",
+    "gold_reference_reply": "When an Apple Pay card is suspended by issuer, your bank has placed a hold on the digital token. Please call the customer service number on the back of your card to re-verify the card.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-144",
+    "customer_tweet": "My Apple ID country change is blocked because I have an active pre-order for an album releasing next month.",
+    "true_intent": "billing_subscriptions",
+    "true_escalate": false,
+    "true_escalation_reason": "Pre-order cancellation instructions to unblock region change.",
+    "gold_reference_reply": "Active pre-orders must be cancelled before you can change your store country. You can cancel the pre-order in iTunes Store > View Apple ID > Pre-Orders, then proceed with the country change.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-145",
+    "customer_tweet": "I dropped my iPhone on concrete and the front glass is completely shattered with glass shards falling out.",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": true,
+    "true_escalation_reason": "Physical glass shatter is a hardware repair requiring store booking or mail-in service.",
+    "gold_reference_reply": "We are sorry about your phone! Be careful with loose glass. You can check screen repair pricing and schedule an appointment at an Apple Store or Authorized Service Provider at support.apple.com/repair.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-146",
+    "customer_tweet": "My iPhone fell into the swimming pool for 10 minutes and now the speakers make a muffled crackling sound.",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": true,
+    "true_escalation_reason": "Liquid intrusion with audio transducer failure requires hardware inspection.",
+    "gold_reference_reply": "Keep the device powered off and do not charge it. Stand it upright with speaker facing down to drain moisture. Since crackling persists, DM us to arrange an inspection for liquid damage.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-147",
+    "customer_tweet": "How much does a screen replacement cost for iPhone 7 Plus if I have AppleCare+?",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": false,
+    "true_escalation_reason": "Standard AppleCare+ screen deductible inquiry ($29).",
+    "gold_reference_reply": "With AppleCare+, an iPhone 7 Plus screen replacement is just $29 plus applicable tax. You can book an appointment directly through the Apple Support app or at support.apple.com/repair.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-148",
+    "customer_tweet": "My ear speaker is so quiet I can barely hear the caller unless I am in a silent room.",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": false,
+    "true_escalation_reason": "Receiver mesh cleaning step before hardware service.",
+    "gold_reference_reply": "Check the receiver mesh at the top of your screen to make sure it is clean and free of lint. Clean gently with a clean, dry soft-bristled brush. DM us if volume is still too low.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-149",
+    "customer_tweet": "The home button on my iPhone 7 stopped clicking completely and has a warning on screen saying 'Home Button May Need Service'.",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": true,
+    "true_escalation_reason": "Solid-state home button hardware failure with system diagnostic alert; needs store service.",
+    "gold_reference_reply": "This system alert indicates the Taptic Engine or Home Button sensor requires service. iOS will enable on-screen AssistiveTouch in the meantime. DM us so we can help schedule your repair.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-150",
+    "customer_tweet": "The camera lens glass on the back of my iPhone X cracked, but photos still look okay. Can you replace just the glass?",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": true,
+    "true_escalation_reason": "Rear enclosure / camera module repair assessment.",
+    "gold_reference_reply": "Rear camera lens damage typically requires a rear system or whole-unit replacement depending on internal sensor exposure. We recommend having an Apple Store technician inspect it.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-151",
+    "customer_tweet": "How long does a same-day screen replacement take at an Apple Store?",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": false,
+    "true_escalation_reason": "Store turnaround time informational inquiry.",
+    "gold_reference_reply": "Same-day screen repairs typically take about 1 to 2 hours at an Apple Store, depending on technician queue volume. We strongly recommend booking an appointment in advance!",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-152",
+    "customer_tweet": "My MacBook keyboard has several keys that type double letters or don't register at all (spacebar, e, t).",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": true,
+    "true_escalation_reason": "Butterfly keyboard issue covered under Apple Keyboard Service Program.",
+    "gold_reference_reply": "Apple has a Keyboard Service Program for qualifying MacBook models with repeating or sticky keys. Please DM us your MacBook serial number and model so we can check your free repair eligibility.",
+    "difficulty": "hard",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-153",
+    "customer_tweet": "Can I get my iPhone repaired at Best Buy under Apple warranty?",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": false,
+    "true_escalation_reason": "AASP (Apple Authorized Service Provider) confirmation.",
+    "gold_reference_reply": "Yes! Best Buy Geek Squad locations are Apple Authorized Service Providers. They use genuine Apple parts and honor AppleCare+ and Apple limited warranties.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-154",
+    "customer_tweet": "I got water on my phone and put it in rice for 48 hours, now it won't charge or turn on.",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": true,
+    "true_escalation_reason": "Corrosion damage from rice/moisture; hardware inspection required.",
+    "gold_reference_reply": "Rice can introduce starch and debris into ports and cannot remove internal corrosion. Because the device will not power on, please DM us so we can arrange hardware service options.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-155",
+    "customer_tweet": "Green vertical line appeared running down the entire OLED screen on my iPhone X!",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": true,
+    "true_escalation_reason": "OLED subpixel display driver line failure; hardware display replacement required.",
+    "gold_reference_reply": "A persistent vertical green line is a hardware defect in the OLED display assembly. Please DM us your serial number and schedule an Apple Store appointment for a screen replacement.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-156",
+    "customer_tweet": "How do I check if my device is still covered under AppleCare warranty?",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": false,
+    "true_escalation_reason": "Self-service coverage check at checkcoverage.apple.com.",
+    "gold_reference_reply": "You can check your warranty coverage anytime by entering your serial number at checkcoverage.apple.com or viewing it directly in Settings > General > About on iOS 12.2 or later.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-157",
+    "customer_tweet": "Vibration motor makes an awful clicking metallic sound whenever a notification comes in.",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": true,
+    "true_escalation_reason": "Taptic engine loose screw or mechanical spring failure.",
+    "gold_reference_reply": "A metallic buzzing or clicking from the vibration points to a loose or failing Taptic Engine. We recommend having an Apple Store technician inspect and fasten or replace the module.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-158",
+    "customer_tweet": "Do I need to back up my phone before sending it in for screen repair?",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": false,
+    "true_escalation_reason": "Repair preparation guidance (iCloud/iTunes backup, Find My off).",
+    "gold_reference_reply": "Yes, absolutely! Devices may need to be wiped or updated during repair. Create a backup via iCloud or your computer, and make sure you know your Apple ID credentials to turn off Find My.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-159",
+    "customer_tweet": "My toddler threw my iPad down the stairs and the chassis is bent into a curve.",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": true,
+    "true_escalation_reason": "Chassis structural bend with internal battery puncture hazard.",
+    "gold_reference_reply": "A bent chassis poses risk to internal components and the battery. Please stop using the device and do not attempt to bend it back. DM us to review out-of-warranty or AppleCare replacement options.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-160",
+    "customer_tweet": "Does cosmetic scratching on the stainless steel band of the iPhone X void the warranty?",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": false,
+    "true_escalation_reason": "Warranty policy clarification: normal cosmetic wear does not void warranty.",
+    "gold_reference_reply": "Normal cosmetic scratches or micro-abrasions on the stainless steel band do not void your hardware warranty. Functional repairs remain fully covered under your warranty terms.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-161",
+    "customer_tweet": "The Genius Bar told me they have no appointments for 10 days. How can I get my broken phone fixed sooner?",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": false,
+    "true_escalation_reason": "Alternative repair channels: Apple Authorized Service Providers (AASP) or Mail-in repair.",
+    "gold_reference_reply": "You do not have to wait! You can visit an Apple Authorized Service Provider (like Best Buy) or set up mail-in repair where Apple sends you an express shipping box. Check options at support.apple.com/repair.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-162",
+    "customer_tweet": "My volume button fell out of the phone body and is lost. Can this be replaced?",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": true,
+    "true_escalation_reason": "Missing mechanical button requires enclosure or switch assembly repair.",
+    "gold_reference_reply": "We can certainly help replace external buttons. We recommend bringing your phone to an Apple Store or AASP where technicians can install a replacement button assembly. DM us for assistance.",
+    "difficulty": "easy",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-163",
+    "customer_tweet": "Anti-reflective coating on my Retina MacBook Pro screen is peeling off in ugly patches.",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": true,
+    "true_escalation_reason": "Staingate / display anti-reflective coating quality program eligible for free replacement.",
+    "gold_reference_reply": "Apple has a quality program covering anti-reflective coating delamination on eligible Retina MacBook Pro models. Please DM us your serial number so we can check your eligibility for a free display repair.",
+    "difficulty": "hard",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-164",
+    "customer_tweet": "Can third party screens cause Face ID to stop working on iPhone X?",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": false,
+    "true_escalation_reason": "TrueDepth sensor pairing technical explanation.",
+    "gold_reference_reply": "Yes. The TrueDepth camera and sensor flex cable are uniquely serialized and paired to the logic board for security. Non-certified third-party screen replacements can disable Face ID.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-165",
+    "customer_tweet": "Apple Store gave me back my phone after battery replacement and now the microphone doesn't work at all!",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": true,
+    "true_escalation_reason": "Service quality repeat failure / damaged component during repair; escalate to store management.",
+    "gold_reference_reply": "We are very sorry for this post-service issue. All Apple repairs carry a 90-day warranty. Please DM us your repair work order number so we can have the store manager expedite an immediate resolution.",
+    "difficulty": "hard",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-166",
+    "customer_tweet": "What do I need to bring with me to an Apple Store Genius Bar appointment?",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": false,
+    "true_escalation_reason": "Pre-appointment checklist (ID, device, payment method, backup completed).",
+    "gold_reference_reply": "Please bring a government-issued photo ID, your device, and know your Apple ID and password so you can disable Find My. Make sure you back up your device before your visit!",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-167",
+    "customer_tweet": "The glass back of my iPhone 8 shattered into tiny pieces. Is it the same price as front screen repair?",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": false,
+    "true_escalation_reason": "Pricing differentiation: back glass is categorized under 'other damage' on iPhone 8.",
+    "gold_reference_reply": "On iPhone 8, back glass repair falls under 'other damage' rather than screen repair pricing because it is integrated into the enclosure. Check exact out-of-warranty pricing at support.apple.com/repair.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-168",
+    "customer_tweet": "My headphone jack has the tip of a 3.5mm plug broken off inside it. How do I get it out?",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": true,
+    "true_escalation_reason": "Broken jack pin extraction requires specialized non-conductive extraction tool.",
+    "gold_reference_reply": "Avoid using superglue or safety pins as that can permanently ruin the contact pins. Bring your device to an Apple Store where technicians have specialized non-conductive tools to extract the plug.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-169",
+    "customer_tweet": "Does Apple offer loaner phones while my iPhone is being repaired?",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": false,
+    "true_escalation_reason": "Loaner phone policy (subject to store inventory and repair type).",
+    "gold_reference_reply": "Apple Stores may offer loaner devices for qualifying repairs that require off-site depot repair, subject to store inventory and availability. Ask the Genius Bar technician during check-in.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-170",
+    "customer_tweet": "A mysterious yellow tint appeared on the bottom left corner of my iPad screen.",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": true,
+    "true_escalation_reason": "LCD backlight diffuser glue curing defect or pressure mark.",
+    "gold_reference_reply": "A localized yellow stain typically indicates an adhesive cure issue or pressure damage on the backlight diffuser. Please DM us so we can inspect photos and check warranty repair options.",
+    "difficulty": "medium",
+    "human_judge_score": 4
+  },
+  {
+    "id": "GOLD-171",
+    "customer_tweet": "Is water resistance on iPhone 8 covered under the 1-year limited warranty if water gets in?",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": false,
+    "true_escalation_reason": "Warranty exclusion policy: liquid damage is not covered by the 1-year limited warranty.",
+    "gold_reference_reply": "While iPhone 8 has IP67 water and dust resistance, resistance can decrease with normal wear, and liquid damage is not covered under the Apple 1-Year Limited Warranty.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-172",
+    "customer_tweet": "My Apple Watch screen popped completely off the watch body while I was sleeping!",
+    "true_intent": "physical_damage_repair",
+    "true_escalate": true,
+    "true_escalation_reason": "Swollen battery pushing watch display off; covered under Apple extended service coverage.",
+    "gold_reference_reply": "This is often caused by an expanding battery. Apple has an extended service policy for this condition on certain Apple Watch models. Do not press it back on. Please DM us your serial number immediately.",
+    "difficulty": "hard",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-173",
+    "customer_tweet": "How do I get rid of the padlock icon with a circle arrow around it at the top right of my screen?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Standard Portrait Orientation Lock feature explanation.",
+    "gold_reference_reply": "That icon is the Portrait Orientation Lock! Swipe up from the bottom of your screen (or down from top right on iPhone X) to open Control Center, and tap the padlock icon to unlock screen rotation.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-174",
+    "customer_tweet": "How do I delete apps in iOS 11? When I press and hold an app, nothing wiggles anymore.",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "3D Touch vs long press distinction in iOS.",
+    "gold_reference_reply": "On devices with 3D Touch, rest your finger lightly on the app icon without pressing hard. After about 2 seconds, the apps will start jiggling and show the 'X' to delete!",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-175",
+    "customer_tweet": "Where did the Auto-Brightness setting go in iOS 11? It used to be under Display & Brightness.",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "UI location change: moved to Accessibility.",
+    "gold_reference_reply": "In iOS 11, Auto-Brightness was moved to Accessibility! You can find it at Settings > General > Accessibility > Display Accommodations > Auto-Brightness.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-176",
+    "customer_tweet": "How do I set up Face ID on my new iPhone X?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Standard setup walkthrough for Face ID.",
+    "gold_reference_reply": "Congrats on the iPhone X! Go to Settings > Face ID & Passcode, tap Set Up Face ID, position your face in the circle, and gently roll your head to complete the scan.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-177",
+    "customer_tweet": "How do I record my iPhone screen with audio in iOS 11?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Screen recording Control Center setup and microphone toggle.",
+    "gold_reference_reply": "Add Screen Recording in Settings > Control Center > Customize Controls. Open Control Center, 3D Touch the record circle, tap Microphone Audio to turn on mic sound, and tap Start Recording!",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-178",
+    "customer_tweet": "Can I trade in my iPhone 6s towards the purchase of an iPhone 8?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Apple GiveBack / Trade-In program explanation.",
+    "gold_reference_reply": "Yes, absolutely! Through the Apple Trade In program, you can trade in your iPhone 6s for instant credit towards an iPhone 8 or an Apple Gift Card. Check estimated values at apple.com/shop/trade-in.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-179",
+    "customer_tweet": "How do I turn on True Tone display on my iPad Pro?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "True Tone toggle in Display & Brightness.",
+    "gold_reference_reply": "You can turn on True Tone in Settings > Display & Brightness > True Tone, or by swiping open Control Center, hard pressing the brightness slider, and tapping the True Tone icon.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-180",
+    "customer_tweet": "How do I force close an app on iPhone X without a home button?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "iPhone X gesture navigation explanation.",
+    "gold_reference_reply": "On iPhone X, swipe up from the bottom edge and pause your finger in the middle of the screen to open the app switcher. Touch and hold any app card until red '-' circles appear, then swipe up to close.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-181",
+    "customer_tweet": "What does the blue crescent moon icon in the status bar mean?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Do Not Disturb indicator explanation.",
+    "gold_reference_reply": "The crescent moon icon means Do Not Disturb is currently turned on, which silences incoming calls and notifications. You can toggle it off in Control Center or Settings > Do Not Disturb.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-182",
+    "customer_tweet": "How do I move my data from an Android phone to my new iPhone?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Move to iOS app walkthrough.",
+    "gold_reference_reply": "Download the Move to iOS app on your Android phone from the Google Play Store. When setting up your new iPhone, choose Move Data from Android on the Apps & Data screen to transfer contacts, photos, and messages!",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-183",
+    "customer_tweet": "Can I use Siri without holding the home button or speaking loudly?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Type to Siri accessibility feature setup.",
+    "gold_reference_reply": "Yes! iOS 11 includes Type to Siri. You can enable it in Settings > General > Accessibility > Siri > Type to Siri. Now invoking Siri brings up a keyboard for silent typing.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-184",
+    "customer_tweet": "How do I take a screenshot on the iPhone X without a home button?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "iPhone X screenshot button combination.",
+    "gold_reference_reply": "To take a screenshot on iPhone X, press and quickly release the Side button and the Volume Up button at the exact same time. A thumbnail preview will appear in the lower-left corner!",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-185",
+    "customer_tweet": "What is the difference between iCloud Drive and iCloud Backup?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Conceptual clarification between document sync vs whole device backup.",
+    "gold_reference_reply": "iCloud Drive stores and syncs your individual documents, files, and app folders across devices. iCloud Backup saves your entire device state (settings, app data, messages) so you can restore a new device.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-186",
+    "customer_tweet": "How do I set up Apple Pay on my Apple Watch?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Watch app Wallet setup workflow.",
+    "gold_reference_reply": "Open the Apple Watch app on your iPhone, go to the My Watch tab, tap Wallet & Apple Pay, and tap Add Card to register your payment card to your watch.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-187",
+    "customer_tweet": "How do I silence unknown callers on iOS?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Do Not Disturb contact whitelist workaround / feature guide.",
+    "gold_reference_reply": "You can configure Do Not Disturb in Settings > Do Not Disturb > Allow Calls From > All Contacts. This silences calls from numbers not saved in your Contacts list while allowing known friends to ring.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-188",
+    "customer_tweet": "Is it possible to customize the toggles in Control Center on iOS 11?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Control Center customization settings guide.",
+    "gold_reference_reply": "Yes, iOS 11 lets you customize Control Center! Head over to Settings > Control Center > Customize Controls, where you can add, remove, and reorder shortcuts like Low Power Mode and Timer.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-189",
+    "customer_tweet": "How do I change the default search engine in Safari from Google to DuckDuckGo?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Safari settings search engine configuration.",
+    "gold_reference_reply": "That is easy to change! Go to Settings > Safari > Search Engine, and select DuckDuckGo from the list.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-190",
+    "customer_tweet": "Can I use Apple Pencil with my iPhone 8 Plus?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Hardware compatibility clarification: Apple Pencil is only compatible with iPad models.",
+    "gold_reference_reply": "Apple Pencil is designed specifically for compatible iPad models (iPad Pro and 6th generation iPad) and does not work with any iPhone models.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-191",
+    "customer_tweet": "How do I scan documents directly in the Notes app on iOS 11?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Notes document scanner feature tutorial.",
+    "gold_reference_reply": "Open Notes, create or open a note, tap the '+' icon above the keyboard, tap Scan Documents, and point the camera at your document. Notes will automatically capture and crop it!",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-192",
+    "customer_tweet": "What does Offload Unused Apps mean in iPhone Storage settings?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Offload Apps storage optimization explanation.",
+    "gold_reference_reply": "Offloading frees up the storage space used by the app itself while keeping all its documents and data safe. When you reinstall the app from the App Store, all your data is instantly restored.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-193",
+    "customer_tweet": "How do I set up Emergency SOS so it calls my emergency contacts automatically?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Emergency SOS and Medical ID setup in Health app.",
+    "gold_reference_reply": "Go to Settings > Emergency SOS to configure Auto Call. To add emergency contacts who receive your location text, open the Health app, tap Medical ID, and add your trusted emergency contacts.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-194",
+    "customer_tweet": "Can I use Night Shift and Low Power Mode at the same time?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Feature compatibility clarification.",
+    "gold_reference_reply": "Yes! In newer iOS versions, you can enable both Low Power Mode and Night Shift simultaneously through Control Center or Settings > Display & Brightness.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-195",
+    "customer_tweet": "How do I invert screen colors for high contrast on iOS 11?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Smart Invert vs Classic Invert accessibility setup.",
+    "gold_reference_reply": "iOS 11 features Smart Invert! Go to Settings > General > Accessibility > Display Accommodations > Invert Colors, and select Smart Invert which reverses colors without altering photos or media.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-196",
+    "customer_tweet": "How do I turn off read receipts for iMessage so people don't know when I read their text?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "iMessage read receipts toggle.",
+    "gold_reference_reply": "Go to Settings > Messages and toggle off Send Read Receipts. You can also toggle this individually per conversation by tapping the 'i' info icon at the top of a text thread.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-197",
+    "customer_tweet": "Can two people share the same health data on the Health app?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Health data privacy architecture explanation.",
+    "gold_reference_reply": "Health data is end-to-end encrypted and tied directly to each individual Apple ID for strict privacy. You can export health records as XML from your profile, but live syncing across IDs is not supported.",
+    "difficulty": "medium",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-198",
+    "customer_tweet": "How do I turn on the Magnifier feature using the triple-click shortcut?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Accessibility shortcut configuration.",
+    "gold_reference_reply": "Turn on Magnifier in Settings > General > Accessibility > Magnifier. Then scroll down to Accessibility Shortcut and check Magnifier so a triple-click of the side or Home button opens it instantly!",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-199",
+    "customer_tweet": "Why does my phone say 'Press home to open' instead of 'Slide to unlock'?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "iOS lockscreen design change explanation and Rest Finger to Open setting.",
+    "gold_reference_reply": "Apple updated the lockscreen mechanics in iOS 10. If you prefer opening without clicking the button, turn on Rest Finger to Open in Settings > General > Accessibility > Home Button.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  },
+  {
+    "id": "GOLD-200",
+    "customer_tweet": "How do I silence Siri so she only responds with voice when my ringer switch is on?",
+    "true_intent": "general_inquiry_features",
+    "true_escalate": false,
+    "true_escalation_reason": "Siri Voice Feedback settings adjustment.",
+    "gold_reference_reply": "You can change this in Settings > Siri & Search > Voice Feedback. Select Control With Ring Switch so Siri stays silent whenever your physical ring switch is set to silent.",
+    "difficulty": "easy",
+    "human_judge_score": 5
+  }
+]

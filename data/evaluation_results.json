@@ -1,0 +1,474 @@
+{
+  "Baseline 1 (Trivial)": {
+    "latency_per_query_ms": 0.02088308334350586,
+    "intent_metrics": {
+      "accuracy": 0.15,
+      "macro_precision": 0.02142857142857143,
+      "macro_recall": 0.14285714285714285,
+      "macro_f1": 0.037267080745341616,
+      "per_class": {
+        "hardware_battery": {
+          "precision": 0.15,
+          "recall": 1.0,
+          "f1": 0.2608695652173913,
+          "support": 30
+        },
+        "software_os_update": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 30
+        },
+        "account_appleid_icloud": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 28
+        },
+        "connectivity_network": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 28
+        },
+        "billing_subscriptions": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 28
+        },
+        "physical_damage_repair": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 28
+        },
+        "general_inquiry_features": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 28
+        }
+      },
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          30,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          28,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          28,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          28,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          28,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          28,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "labels": [
+        "hardware_battery",
+        "software_os_update",
+        "account_appleid_icloud",
+        "connectivity_network",
+        "billing_subscriptions",
+        "physical_damage_repair",
+        "general_inquiry_features"
+      ]
+    },
+    "escalation_metrics": {
+      "accuracy": 0.71,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "true_positives": 0,
+      "false_positives": 0,
+      "false_negatives": 58,
+      "true_negatives": 142,
+      "false_auto_handle_rate_FAHR": 1.0,
+      "false_escalation_rate_FER": 0.0
+    },
+    "generation_metrics": {
+      "mean_rouge1": 0.1921402553758314,
+      "mean_rouge2": 0.035402413240292974,
+      "mean_rougeL": 0.12954258665902427,
+      "mean_bleu4": 0.010640588997008782
+    },
+    "mean_judge_score": 3.8375,
+    "judge_score_distribution": {
+      "5_stars": 0,
+      "4_stars": 147,
+      "3_stars": 53,
+      "2_stars": 0,
+      "1_star": 0
+    }
+  },
+  "Baseline 2 (Simple)": {
+    "latency_per_query_ms": 1.9001579284667969,
+    "intent_metrics": {
+      "accuracy": 0.995,
+      "macro_precision": 0.9950738916256158,
+      "macro_recall": 0.9948979591836735,
+      "macro_f1": 0.9948963317384371,
+      "per_class": {
+        "hardware_battery": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 30
+        },
+        "software_os_update": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 30
+        },
+        "account_appleid_icloud": {
+          "precision": 1.0,
+          "recall": 0.9642857142857143,
+          "f1": 0.9818181818181818,
+          "support": 28
+        },
+        "connectivity_network": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 28
+        },
+        "billing_subscriptions": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 28
+        },
+        "physical_damage_repair": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 28
+        },
+        "general_inquiry_features": {
+          "precision": 0.9655172413793104,
+          "recall": 1.0,
+          "f1": 0.9824561403508771,
+          "support": 28
+        }
+      },
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          27,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          28,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          28,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          28,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          28
+        ]
+      ],
+      "labels": [
+        "hardware_battery",
+        "software_os_update",
+        "account_appleid_icloud",
+        "connectivity_network",
+        "billing_subscriptions",
+        "physical_damage_repair",
+        "general_inquiry_features"
+      ]
+    },
+    "escalation_metrics": {
+      "accuracy": 0.735,
+      "precision": 0.6666666666666666,
+      "recall": 0.1724137931034483,
+      "f1": 0.273972602739726,
+      "true_positives": 10,
+      "false_positives": 5,
+      "false_negatives": 48,
+      "true_negatives": 137,
+      "false_auto_handle_rate_FAHR": 0.8275862068965517,
+      "false_escalation_rate_FER": 0.035211267605633804
+    },
+    "generation_metrics": {
+      "mean_rouge1": 0.12474490266536208,
+      "mean_rouge2": 0.011643867893668875,
+      "mean_rougeL": 0.09206367503194045,
+      "mean_bleu4": 0.0006588086137772326
+    },
+    "mean_judge_score": 3.3215,
+    "judge_score_distribution": {
+      "5_stars": 0,
+      "4_stars": 90,
+      "3_stars": 110,
+      "2_stars": 0,
+      "1_star": 0
+    }
+  },
+  "Proposed Agent": {
+    "latency_per_query_ms": 1.6890442371368408,
+    "intent_metrics": {
+      "accuracy": 0.895,
+      "macro_precision": 0.8992157974300831,
+      "macro_recall": 0.8938775510204081,
+      "macro_f1": 0.8950491904408954,
+      "per_class": {
+        "hardware_battery": {
+          "precision": 0.9375,
+          "recall": 1.0,
+          "f1": 0.967741935483871,
+          "support": 30
+        },
+        "software_os_update": {
+          "precision": 0.9,
+          "recall": 0.9,
+          "f1": 0.9,
+          "support": 30
+        },
+        "account_appleid_icloud": {
+          "precision": 0.7857142857142857,
+          "recall": 0.7857142857142857,
+          "f1": 0.7857142857142857,
+          "support": 28
+        },
+        "connectivity_network": {
+          "precision": 1.0,
+          "recall": 0.9642857142857143,
+          "f1": 0.9818181818181818,
+          "support": 28
+        },
+        "billing_subscriptions": {
+          "precision": 0.9583333333333334,
+          "recall": 0.8214285714285714,
+          "f1": 0.8846153846153846,
+          "support": 28
+        },
+        "physical_damage_repair": {
+          "precision": 0.9629629629629629,
+          "recall": 0.9285714285714286,
+          "f1": 0.9454545454545454,
+          "support": 28
+        },
+        "general_inquiry_features": {
+          "precision": 0.75,
+          "recall": 0.8571428571428571,
+          "f1": 0.8,
+          "support": 28
+        }
+      },
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          27,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          22,
+          0,
+          1,
+          0,
+          5
+        ],
+        [
+          0,
+          1,
+          0,
+          27,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          3,
+          0,
+          23,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          26,
+          1
+        ],
+        [
+          0,
+          2,
+          2,
+          0,
+          0,
+          0,
+          24
+        ]
+      ],
+      "labels": [
+        "hardware_battery",
+        "software_os_update",
+        "account_appleid_icloud",
+        "connectivity_network",
+        "billing_subscriptions",
+        "physical_damage_repair",
+        "general_inquiry_features"
+      ]
+    },
+    "escalation_metrics": {
+      "accuracy": 0.83,
+      "precision": 0.7857142857142857,
+      "recall": 0.5689655172413793,
+      "f1": 0.66,
+      "true_positives": 33,
+      "false_positives": 9,
+      "false_negatives": 25,
+      "true_negatives": 133,
+      "false_auto_handle_rate_FAHR": 0.43103448275862066,
+      "false_escalation_rate_FER": 0.06338028169014084
+    },
+    "generation_metrics": {
+      "mean_rouge1": 0.21259936225985934,
+      "mean_rouge2": 0.05838424547087513,
+      "mean_rougeL": 0.15407675040712315,
+      "mean_bleu4": 0.024011644811364703
+    },
+    "mean_judge_score": 4.132999999999999,
+    "judge_score_distribution": {
+      "5_stars": 39,
+      "4_stars": 153,
+      "3_stars": 8,
+      "2_stars": 0,
+      "1_star": 0
+    }
+  },
+  "human_judge_calibration": {
+    "sample_size": 50,
+    "quadratic_weighted_kappa": 0.6,
+    "pearson_correlation": 0.9191594155977199,
+    "pearson_p_value": 4.697398479812204e-21,
+    "spearman_correlation": 0.9160857106244789,
+    "spearman_p_value": 1.110434179190202e-20,
+    "mean_absolute_error_MAE": 0.89,
+    "exact_agreement_rate": 0.26,
+    "within_1_point_agreement_rate": 0.82,
+    "human_mean_score": 2.98,
+    "judge_mean_score": 3.694
+  }
+}

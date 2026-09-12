@@ -1,0 +1,112 @@
+﻿import json
+import csv
+from pathlib import Path
+
+def create_golden_dataset():
+    data = []
+    
+    # 1. HARDWARE_BATTERY (30 cases)
+    battery_specs = [
+        ("GOLD-001", "My iPhone 7 battery is draining from 100% to 20% in less than 2 hours without even using it. Is this normal?", False, 
+         "Standard battery drain troubleshooting: check battery health and background app usage before hardware service.",
+         "We want to help with your battery life! Go to Settings > Battery > Battery Health to check maximum capacity, and see which apps are using the most power. DM us if you would like to troubleshoot further.", "easy", 5),
+        ("GOLD-002", "My phone battery is visibly bulging and pushing the screen off the frame! What should I do??", True,
+         "Swollen battery is a severe hardware safety hazard. Immediate human escalation and store service required.",
+         "Please stop using and charging your device immediately for your safety. We are escalating this to our safety team and will help you schedule an immediate Genius Bar appointment.", "easy", 5),
+        ("GOLD-003", "Whenever I plug my charger in, it says Accessory may not be supported and refuses to charge.", False,
+         "Charging port debris or cable issue. Standard troubleshooting can resolve this without human escalation.",
+         "We can help get your device charging. Inspect the charging port for lint or debris, and try an Apple-certified cable and wall adapter. DM us your iOS version if it continues.", "easy", 5),
+        ("GOLD-004", "My iPhone X gets burning hot while doing basic FaceTime calls and shuts off completely.", False,
+         "Thermal management troubleshooting: check ambient temperature, background updates, and iOS version.",
+         "Let us look into the temperature on your iPhone. Does this happen on Wi-Fi or cellular? Check Settings > General > Software Update to ensure you have the latest iOS. DM us with details.", "medium", 4),
+        ("GOLD-005", "I replaced my battery at a third party kiosk and now my phone won't turn on at all. Can you guys fix it?", True,
+         "Third-party unauthorized hardware tampering and device failure requires Apple Store diagnostic evaluation.",
+         "We would be glad to look into service options for your device. Because it will not power on after service, we recommend scheduling an appointment at an Apple Store or Authorized Service Provider.", "medium", 5),
+        ("GOLD-006", "Phone drops from 40% to 1% instantly when I step outside into the cold weather. iPhone 6s.", False,
+         "Known chemical aging behavior of lithium-ion batteries in cold ambient temperatures; troubleshooting and diagnostic step.",
+         "Cold temperatures can temporarily affect lithium-ion battery performance. Check Settings > Battery > Battery Health. If maximum capacity is below 80%, a battery replacement is recommended.", "medium", 5),
+        ("GOLD-007", "My Apple Watch Series 3 battery used to last 2 days, now it dies in 6 hours after updating watchOS.", False,
+         "Post-update background re-indexing and watchOS background sync issue. Auto-handle via unpair/re-pair troubleshooting.",
+         "We can help with your Apple Watch battery. After an update, background indexing can take up to 48 hours. If it persists, try unpairing and re-pairing your watch via the Watch app on iPhone.", "medium", 4),
+        ("GOLD-008", "My iPad charger sparkled when plugged in and the port smells like burnt plastic.", True,
+         "Electrical burning smell / spark is an acute hardware electrical hazard requiring human escalation.",
+         "Your safety is our top priority. Please unplug and do not use the iPad or adapter. We are escalating this to our Senior Support team immediately. Please DM us your phone number.", "easy", 5),
+        ("GOLD-009", "Is fast charging going to degrade my battery health faster on my iPhone 8?", False,
+         "Educational technical inquiry about fast charging and lithium-ion battery management.",
+         "Great question! Apple fast charging uses built-in thermal and power regulation to charge quickly up to 80% and trickle charge after to preserve battery health safely.", "easy", 5),
+        ("GOLD-010", "My phone is stuck on the red battery icon with lightning cable screen and won't boot even after charging all night.", True,
+         "Failure to hold charge overnight indicates dead logic board power IC or depleted battery cell needing hardware service.",
+         "We would like to help you get your phone powered up. Since it has not charged overnight, we should run remote diagnostics or set up a hardware service appointment. Please DM us your serial number.", "medium", 4),
+        ("GOLD-011", "Battery health shows 74% and says service recommended. How much does an official replacement cost?", False,
+         "Standard battery pricing and service inquiry; direct informational resolution.",
+         "An out-of-warranty battery replacement is typically $49-$69 depending on model, or free if covered under AppleCare+. You can view exact pricing and book an appointment at support.apple.com/repair.", "easy", 5),
+        ("GOLD-012", "Since yesterday, Low Power Mode turns on automatically and I cannot toggle it off. It is greyed out.", False,
+         "Software glitch or profile constraint causing greyed out setting; resolvable via restart or settings reset.",
+         "We can help with your Low Power Mode settings. Start by performing a force restart of your iPhone. If still greyed out, check Settings > General > VPN & Device Management for any profiles.", "medium", 4),
+        ("GOLD-013", "Charging only works if I hold the cable at a specific 45 degree angle. Super annoying!", True,
+         "Loose or physically damaged Lightning/USB-C pins inside port requiring hardware repair or professional cleaning.",
+         "This often points to debris compacted in the Lightning port or damaged connector pins. We recommend bringing your device to an Apple Store where an advisor can safely clean or inspect the port.", "medium", 5),
+        ("GOLD-014", "I have been using my phone for 10 minutes and the back glass is already too hot to touch comfortably.", False,
+         "High CPU utilization or rogue background process; provide initial troubleshooting before escalating.",
+         "We are here to help. Check Settings > Battery to see if a specific app is running heavily in the background. Also, ensure your iOS is updated. DM us your device model and iOS version.", "medium", 4),
+        ("GOLD-015", "Why does my battery percentage jump from 60% to 85% randomly when I reboot?", False,
+         "Battery gauge calibration issue; guide user on recalibration cycles.",
+         "That can happen if the battery management system needs recalibration. Let the battery drain to 0%, charge uninterrupted to 100%, and perform a force restart.", "hard", 4),
+        ("GOLD-016", "My MacBook Pro battery says Condition: Replace Now. Does this mean it could explode?", True,
+         "MacBook battery degraded to end-of-life status. Requires hardware booking and customer reassurance.",
+         "Replace Now means the battery capacity is severely degraded and cannot hold proper charge, though safety mechanisms prevent explosion. We recommend booking a service appointment to replace it.", "medium", 5),
+        ("GOLD-017", "My MagSafe charger gets warm during charging. Is that safe or should I stop using it?", False,
+         "Normal inductive heat transfer for wireless MagSafe charging.",
+         "It is completely normal for MagSafe chargers and devices to get slightly warm during wireless power transfer. The system will automatically limit charging above 80% if it gets too warm.", "easy", 5),
+        ("GOLD-018", "The battery percentage icon disappeared from my status bar after the update. How do I get it back?", False,
+         "UI setting toggle in iOS Settings.",
+         "You can turn that back on easily! Head over to Settings > Battery and toggle on Battery Percentage. On devices with Face ID, you can also swipe down Control Center to see it.", "easy", 5),
+        ("GOLD-019", "My phone will not charge past 80% no matter how long it stays on the charger at night.", False,
+         "Optimized Battery Charging feature explanation.",
+         "This is likely Optimized Battery Charging at work, which pauses charging past 80% to protect battery lifespan until your wake-up time. You can view or toggle this in Settings > Battery > Battery Health.", "easy", 5),
+        ("GOLD-020", "I already tried resetting network settings, restarting, and buying 3 new cables. The phone still does not charge. I need a replacement now.", True,
+         "Customer exhausted all standard troubleshooting and expresses frustration. Needs human agent for warranty exchange.",
+         "We understand your frustration and apologize for the inconvenience. Since multiple cables failed and resets did not help, let us connect you with a senior advisor to arrange warranty service. DM us your serial number.", "hard", 5),
+        ("GOLD-021", "Can I use my 65W MacBook USB-C charger to charge my iPhone without blowing it up?", False,
+         "Power delivery standard explanation.",
+         "Yes, absolutely! Apple USB-C power adapters use standard USB Power Delivery negotiation, so your iPhone will safely draw only the maximum power it can handle.", "easy", 5),
+        ("GOLD-022", "My phone battery drain is insane, 50% lost overnight on standby with all apps closed.", False,
+         "Standby battery drain troubleshooting: check Background App Refresh and push email.",
+         "Let us track down what is running overnight. Check Settings > Battery to see the hourly usage graph. Also try toggling off Background App Refresh in Settings > General. DM us if you need more help.", "medium", 4),
+        ("GOLD-023", "Smart Battery Case is not showing up in the battery widget on iOS 11.2.", False,
+         "Accessory firmware / connection glitch.",
+         "We can help with that. Remove your iPhone from the case, clean the Lightning connector on the case with a dry lint-free cloth, restart your phone, and reconnect. DM us if the widget does not update.", "medium", 4),
+        ("GOLD-024", "My iPhone battery swollen so bad it cracked my screen! I want a full refund and compensation!", True,
+         "Thermal battery expansion causing structural damage; safety escalation and legal/compensation claim.",
+         "We take safety concerns very seriously. Please cease using the device immediately. We are escalating this case directly to our Safety and Executive Relations team. Please DM us your full name and contact number.", "hard", 5),
+        ("GOLD-025", "Does using dark mode actually save battery on an iPhone 7 with LCD screen?", False,
+         "Display technology technical explanation (LCD vs OLED).",
+         "Dark Mode provides significant battery savings on OLED displays (like iPhone X and newer), but on LCD screens like the iPhone 7, the backlight remains illuminated regardless of color.", "medium", 5),
+        ("GOLD-026", "My phone is stuck in a bootloop that only happens when plugged into the charger. On battery it boots fine.", True,
+         "Short circuit or Tristar/Hydra charging IC hardware defect. Requires store diagnostic.",
+         "That indicates a potential hardware fault with the power delivery circuit. We recommend having your iPhone inspected at an Apple Store or authorized service center. DM us your postal code to find locations.", "hard", 4),
+        ("GOLD-027", "Is it bad to leave my iPhone plugged in overnight all the time?", False,
+         "Common battery care inquiry.",
+         "Not at all! iPhones have built-in charge protection circuits that automatically stop incoming current once 100% is reached to avoid overcharging.", "easy", 5),
+        ("GOLD-028", "My phone shut down at 25% battery in the middle of an emergency call. This is unacceptable.", True,
+         "Emergency situation with unexpected shutdown; high customer distress and possible battery degradation.",
+         "We are very sorry to hear about this concerning experience. Sudden shutdowns at 25% indicate sudden voltage drop from battery degradation. Let us connect with you via DM right away to inspect your battery diagnostics.", "hard", 5),
+        ("GOLD-029", "How can I check the battery cycle count on my iPad Pro?", False,
+         "Feature clarification: iPadOS does not show battery health natively in settings like iPhone.",
+         "Unlike iPhone, iPadOS does not display battery cycle count in Settings. You can contact Apple Support directly via DM to run a remote diagnostic check on your iPad battery health.", "medium", 5),
+        ("GOLD-030", "My wireless charging pad was working yesterday and today it will not charge my phone at all.", False,
+         "Wireless charging troubleshooting (case thickness, alignment, restart).",
+         "We can help troubleshoot wireless charging. Remove any thick case or metal attachments, center your device on the pad, and restart your iPhone. Let us know if you still see no charge icon.", "easy", 5)
+    ]
+    
+    for item in battery_specs:
+        data.append({
+            "id": item[0], "customer_tweet": item[1], "true_intent": "hardware_battery",
+            "true_escalate": item[2], "true_escalation_reason": item[3],
+            "gold_reference_reply": item[4], "difficulty": item[5], "human_judge_score": item[6]
+        })
+    return data
+
+if __name__ == "__main__":
+    cases = create_golden_dataset()
+    print(f"Generated {len(cases)} battery cases")
